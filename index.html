@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .login-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 100px; /* Adjust the size as needed */
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+        }
+        .forgot-email {
+            color: #0070ba;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .next-button {
+            background-color: #0070ba;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .separator {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .separator::before,
+        .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+        .separator:not(:empty)::before {
+            margin-right: .25em;
+        }
+        .separator:not(:empty)::after {
+            margin-left: .25em;
+        }
+        .sign-up {
+            color: #0070ba;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .languages {
+            margin-bottom: 20px;
+        }
+        .footer-links {
+            font-size: 12px;
+        }
+        .footer-links a {
+            color: #0070ba;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/my-logo.png" alt="Logo">
+        </div>
+        <input type="text" class="input-field" placeholder="Email or mobile number">
+        <a href="#" class="forgot-email">Forgot email?</a>
+        <button class="next-button">Next</button>
+        <div class="separator">or</div>
+        <a href="#" class="sign-up">Sign Up</a>
+        <div class="languages">English | Français | Español | 中文</div>
+        <div class="footer-links">
+            <a href="#">Contact Us</a> | 
+            <a href="#">Privacy</a> | 
+            <a href="#">Legal</a> | 
+            <a href="#">Policy Updates</a> | 
+            <a href="#">Worldwide</a>
+        </div>
+    </div>
+</body>
+</html>
